@@ -1,0 +1,122 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 1000px;
+	position: relative;
+}
+.container {
+	position: relative;
+	height: 200px;
+}
+.clearfix {
+	overflow: hidden;
+	width: 400px;
+	float: right;
+}
+.logo {
+	width: 600px;
+}
+
+.contact {
+	width: 400px;
+	float: right;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 25px;
+}
+.countries {
+	list-style: none; 
+	display: inline;
+	position: absolute;
+	top: 100px;
+	right: 25px;
+}
+.countries li {
+	float: left;
+	margin-right: 5px;
+	line-height: 30px;
+}
+.countries li a {
+	display: block;
+	text-align: center;
+	padding-top: 50px; 
+	color: black;
+	width: 55px;
+	/* height: 50px; */
+	font-size: 11px;
+}
+.countries .India {
+	background: url(img/india.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	
+}
+.countries .Nepal {
+    background: url(img/Nepal.png);	
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.countries .Tibet {
+	background: url(img/tibet.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.countries .Butan {
+	background: url(img/Butan.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.countries .Sri_Lanka {
+	background: url(img/SriLanka.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.countries .Maldives {
+	background: url(img/Maldives.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.contentmain {
+	position: relative;
+	
+}
+#clearfix {
+	width: 1000px;
+}
+#clearfix:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+
+#menu  ul ul {  /* список внутри списка-дочерний */
+	display: none; /* Дочерние списки скрыты */
+}
+#menu ul li:hover > ul {
+	display: block; /* при наведении на li родительский список выпадают дочерние меню */
+}
+	
+#menu li {
+	float: left; /* делает меню горизонтальным */
+	list-style: none;
+	width: 140px;
+	text-align: center;
+	
+}
+#menu {
+	margin: -22px 0;
+	line-height: 30px;	
+}
+
+#menu li a {
+	text-decoration: none;
+	display: block; /* ссылки являются блочным элементом */
+	color: white;
+	background: #303030;
+	padding: 0 20px;
+	font-size: 14px;
+	
+}
