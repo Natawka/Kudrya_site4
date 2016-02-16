@@ -81,7 +81,6 @@ body {
 }
 .contentmain {
 	position: relative;
-	
 }
 #clearfix {
 	width: 1000px;
@@ -91,32 +90,27 @@ body {
 	clear: both;
 	display: block;
 }
-
 #menu  ul ul {  /* список внутри списка-дочерний */
 	display: none; /* Дочерние списки скрыты */
 }
 #menu ul li:hover > ul {
 	display: block; /* при наведении на li родительский список выпадают дочерние меню */
 }
-	
 #menu li {
 	float: left; /* делает меню горизонтальным */
 	list-style: none;
 	width: 140px;
 	text-align: center;
-	
 }
 #menu {
 	margin: -22px 0;
 	line-height: 30px;	
 }
-
 #menu li a {
 	text-decoration: none;
 	display: block; /* ссылки являются блочным элементом */
 	color: white;
 	background: #303030;
 	padding: 0 20px;
-	font-size: 14px;
-	
+	font-size: 14px;	
 }
