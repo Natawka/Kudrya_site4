@@ -4,22 +4,29 @@ body {
 }
 .wrapper {
 	margin: 0 auto;
-	width: 1000px;
+	width: 998px;
 	position: relative;
 }
-.container {
-	position: relative;
-	height: 200px;
+.border {
+	width: 998px;
+	height: 1026px;
+	border: 1px solid #c7cacf;
+	border-bottom: 3px solid #031d28;
+	box-shadow: 0px -4px 13px 0px rgba(199,202,207,1);
+	margin-bottom: 30px;
 }
-.clearfix {
+/* .clearfix {
 	overflow: hidden;
 	width: 400px;
-	float: right;
+    float: right;}*/
+.clearfix:after {
+    content:'';
+    display:block;   /* чтобы блок  начал учитывать содержащие в себе плавающие элементы для этого блока нужно добавить класс со  специальными свойствами */
+    clear:both;
 }
 .logo {
 	width: 600px;
 }
-
 .contact {
 	width: 400px;
 	float: right;
@@ -31,8 +38,8 @@ body {
 	list-style: none; 
 	display: inline;
 	position: absolute;
-	top: 100px;
-	right: 25px;
+	top: 90px;
+	right: 20px;
 }
 .countries li {
 	float: left;
@@ -42,7 +49,7 @@ body {
 .countries li a {
 	display: block;
 	text-align: center;
-	padding-top: 50px; 
+	padding-top: 40px; 
 	color: black;
 	width: 55px;
 	/* height: 50px; */
@@ -52,7 +59,6 @@ body {
 	background: url(img/india.png);
 	background-repeat: no-repeat;
 	background-position: center top;
-	
 }
 .countries .Nepal {
     background: url(img/Nepal.png);	
@@ -79,38 +85,90 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 }
-.contentmain {
+/*.contentmain {
 	position: relative;
+} */
+
+ul {
+	list-style: none; 
 }
-#clearfix {
-	width: 1000px;
+.navigation {
+	width: 1000px;     
+	background: linear-gradient(to bottom, #373737, #303030);
+	margin-top: -23px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000000;
+	height: 40px;
 }
-#clearfix:after {
-	content:"";
-	clear: both;
-	display: block;
+.navigation li {
+	display: inline-block; 
+	margin: 0 15px; /* расстояние между кнопками */	
 }
-#menu  ul ul {  /* список внутри списка-дочерний */
-	display: none; /* Дочерние списки скрыты */
+.navigation:after{
+    content:'';
+    display:block;   /* чтобы блок  начал учитывать содержащие в себе плавающие элементы для этого блока нужно добавить класс со  специальными свойствами */
+    clear:both;
 }
-#menu ul li:hover > ul {
-	display: block; /* при наведении на li родительский список выпадают дочерние меню */
+.navigation li a {   /* стилизируем сами ссылки */
+    display: block;   /* ссылки делаем блоком, чтоб можно было задавать ширину, высоту */
+    font: 14px Tahoma, sans-serif;
+    color: #ffffff;
+    padding: 10px 15px; /* внутренние отступы, поля вокруг текста в ссылках */
+    text-decoration: none;
+	text-align: center;	
+	
 }
-#menu li {
-	float: left; /* делает меню горизонтальным */
-	list-style: none;
-	width: 140px;
+ .navigation li .sub-menu li{
+    float:none;   /* для дочерних отменяем float */
+}
+.navigation li:hover .sub-menu{
+    display:block;
+}
+.navigation li .sub-menu{
+    display:none;
+    background:#303030;
+    position: absolute;
+    top: 100%;
+    left:-54px; /* колдовать с отступами дочернего меню относительно родителя*/
+}
+.navigation li{
+   /* float:left;*/
+    position:relative;
+}
+.fon {
+	width: 1000px;  /* ширина трех блоков */
+	background: url(img/fon.png) repeat-y; /* фоновая картинка. повторяется по вертикали */
+	float: left;
+	margin: -20px 0px;
+	font: 14px Tahoma, sans-serif;
+}   
+.leftcolumn {
+	width: 208px;
+	float: left;
+}
+.rightcolumn {
+	width: 208px;
+	float: left;
+}
+.centercolumn {
+	width: 578px;
+	float: left;
+}
+p {
+	padding-left: 15px;
+	padding-right: 20px;
+	line-height: 25px;
+}
+h2 {
+	color: #424c43;
 	text-align: center;
+	margin-bottom: -8px;
+	margin-top: 8px;
 }
-#menu {
-	margin: -22px 0;
-	line-height: 30px;	
+.footer {
+	color: #cee3ec;
+	font: 12px Tahoma, sans-serif;
 }
-#menu li a {
-	text-decoration: none;
-	display: block; /* ссылки являются блочным элементом */
-	color: white;
-	background: #303030;
-	padding: 0 20px;
-	font-size: 14px;	
+.footer p {
+	text-align: center;
 }

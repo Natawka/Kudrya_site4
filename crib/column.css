@@ -1,0 +1,23 @@
+.fon {
+	width: 1000px;  /* ширина трех блоков */
+	background: url(img/fon.png) repeat-y; /* фоновая картинка. повторяется по вертикали */
+	float: left;
+}   
+.leftcolumn {
+	width: 208px;
+	float: left;
+	
+}
+.rightcolumn {
+	width: 208px;
+	float: left;
+	
+}
+.centercolumn {
+	width: 578px;
+	float: left;
+}
+p {
+	padding-left: 15px;
+	padding-right: 20px;
+}

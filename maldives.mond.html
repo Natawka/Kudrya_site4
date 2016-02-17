@@ -8,6 +8,7 @@
 <body>
    <div class="wrapper">
            <!-- HEADER -->
+	  <div class="border">   
       <div class="container">
 	       <div class="contact">
 			  <img src="img/address.png">
@@ -25,14 +26,13 @@
 	    </div> 
       </div>
 			<!-- CONTENT -->
-	     <div class="contentmain">
+	     <!--<div class="contentmain"> -->
 		    <img src="https://pp.vk.me/c627121/v627121389/419c3/Sk1CzJkgv_k.jpg" height="236" width="1000">
-		     <div id="clearfix"> 
-			  <div id="menu">
-		        <ul>
-		            <li><a href="">Главная</a></li>
-                    <li><a href="">Путешествие</a>
-				          <ul>
+		     <div class="navigation">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Путешествие&#9660;</a>
+				        <ul class="sub-menu">
 				           <li><a href="">Путешествие 1</a></li>
                            <li><a href="">Путешествие 2</a></li>
                            <li><a href="">Путешествие 3</a></li>
@@ -40,8 +40,8 @@
                            <li><a href="">Путешествие 5</a></li>
 					      </ul>
 			        </li>
-                    <li><a href="">Услуги</a>
-			              <ul>				       
+                    <li><a href="">Услуги&#9660;</a>
+			             <ul class="sub-menu">				       
 						   <li><a href="">Услуга 1</a></li>
                            <li><a href="">Услуга 2</a></li>
                            <li><a href="">Услуга 3</a></li>
@@ -49,14 +49,16 @@
                            <li><a href="">Услуга 5</a></li>
 					     </ul>
 				    </li>
-                    <li><a href="">Партнерам</a></li>
+                    <li><a href="">Партнерам&#9660;</a></li>
                     <li><a href="">Отзывы клиентов</a></li>
                     <li><a href="">О нас</a></li>
 				    <li><a href="">Контакты</a></li>
   	            </ul>
-		       </div> 
-	        </div>
-        <div class="info">
+		      </div> 
+	       <!-- </div> -->
+        <div class="fon">
+         <div class="leftcolumn">
+		    <h2>Информация</h2>
          	<p>Lorem ipsum dolor sit amet<br>
 			Lorem ipsum dolor sit amet<br>
 			Lorem ipsum dolor sit amet<br>
@@ -65,9 +67,10 @@
 			Lorem ipsum dolor sit amet<br>
 			Lorem ipsum dolor sit amet<br></p>
 	    </div>
-	    <div class="empty">
+	    <div class="centercolumn"><p></p>
 	    </div>
-		<div class="news">
+		<div class="rightcolumn">
+		    <h2>Новости</h2>
 		  <p>Lorem ipsum dolor sit amet<br>
 			Lorem ipsum dolor sit amet<br>
 			Lorem ipsum dolor sit amet<br>
@@ -94,6 +97,7 @@
         <div class="footer"> 
 		  <p>Copyright(C)asia-holidays.com.2010</p>
 	    </div>
+	 </div>	
    </div>	 
 </body>
 </html>  
